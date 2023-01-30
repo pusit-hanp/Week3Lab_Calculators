@@ -32,14 +32,14 @@ public class AgeCalculatorServlet extends HttpServlet {
        request.setAttribute("age", age);
        
        if(age==null||age.equals("")){
-           request.setAttribute("message","You must give your current age");
+           request.setAttribute("message","You must give your current age."+"<br>");
        } else {
            try {
                int nextAge = Integer.parseInt(age)+1;
-               request.setAttribute("message","Your age next birthday will be " + nextAge);
+               request.setAttribute("message","Your age next birthday will be " + nextAge+"<br>");
            }
            catch(NumberFormatException e){
-               request.setAttribute("message","You must enter a number.");
+               request.setAttribute("message","You must enter a number."+"<br>");
            }
        }
        
