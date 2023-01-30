@@ -19,10 +19,9 @@
             <input type ="submit" value ="+" name = "operation">
             <input type ="submit" value ="-" name = "operation">
             <input type ="submit" value ="*" name = "operation">
-            <input type ="submit" value ="%" name = "operation"><br><br>
-            
-            Result: ${result}<br>
-            <a href="age">Age Calculator</a>
+            <input type ="submit" value ="%" name = "operation"><br>
         </form>
+        <p>Result: ${result}</p>
+        <a href="age">Age Calculator</a>
     </body>
 </html>
